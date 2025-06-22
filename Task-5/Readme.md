@@ -1,3 +1,8 @@
+# Azure Key Vault Setup and Secret Management
+
+## Commands Used
+
+```bash
 az keyvault create --name CapsKeyVaultaka --resource-group CapsResourceGroup --location centralindia
 
 az keyvault set-policy --name CapsKeyVaultaka --upn 221106045@rcpit.ac.in --secret-permissions all --key-permissions all
@@ -5,8 +10,7 @@ az keyvault set-policy --name CapsKeyVaultaka --upn 221106045@rcpit.ac.in --secr
 az keyvault secret set --vault-name CapsKeyVaultaka --name ShieldsSecretValue --value "ThisIsShieldsSecret"
 
 
-
-CMD:
+CMD Output
 
 Microsoft Windows [Version 10.0.22000.2538]
 (c) Microsoft Corporation. All rights reserved.
@@ -41,7 +45,6 @@ With the new Azure CLI login experience, you can select the subscription you wan
 If you encounter any problem, please open an issue at https://aka.ms/azclibug
 
 [Warning] The login output has been updated. Please be aware that it no longer displays the full list of available subscriptions by default.
-
 
 C:\Users\admin>az provider show --namespace Microsoft.KeyVault --query "registrationState"
 "Registered"
