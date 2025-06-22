@@ -1,4 +1,5 @@
 # Azure Key Vault Setup and Secret Management
+Create an Azure key vault and store secrets. Configure access policies for the Key Vault to allow authorized users or applications to manage keys and secrets. retrieve secret from key vault using azure CLI
 
 ## Commands Used
 
